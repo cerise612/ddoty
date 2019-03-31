@@ -1,0 +1,278 @@
+body {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    /* font-family: 'Quicksand', sans-serif; */
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-family: 'Montserrat', sans-serif; */
+}
+
+/*--------------------------------------------------------
+hyperlinks
+--------------------------------------------------------*/
+
+/* unvisited link */
+
+a:link {
+    color: #633894;
+}
+
+/* visited link */
+
+a:visited {
+    color: #FD0157;
+}
+
+/*--------------------------------------------------------
+navigation
+--------------------------------------------------------*/
+
+#navBar {
+    width: 100%;
+    opacity: .75;
+    display: flex;
+    flex-direction: row;
+}
+
+.pageLinks {
+    display: flex;
+    align-items: flex-end;
+    padding-left: 0px;
+}
+
+#socialLinks {
+    display: flex;
+    align-items: flex-end;
+}
+
+/*--------------------------------------------------------
+footer
+--------------------------------------------------------*/
+
+#footer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    opacity: .5;
+}
+
+/*--------------------------------------------------------
+home-banner
+--------------------------------------------------------*/
+
+#banner {
+    background-image: url("../images/main/banner2.jpg");
+    background-repeat: no-repeat;
+    margin-top: 13vh;
+}
+
+#bannerName {
+    padding-left: 2vw;
+    padding-top: 3vh;
+}
+
+#bannerSummary {
+    padding-right: 5vw;
+    padding-left: 2vw;
+    padding-top: 3vh;
+}
+
+#skillsSection {
+    padding-right: 2vw;
+}
+
+#skillsTitle {
+    text-align: center;
+    padding-left: 10vw;
+    padding-top: 3vh;
+}
+
+/*--------------------------------------------------------
+home-center div
+--------------------------------------------------------*/
+
+#centerSection {
+    display: flex;
+    flex-direction: row;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+#starSection {
+    text-align: center;
+}
+
+#heartSection {
+    text-align: center;
+}
+
+#eyeSection {
+    text-align: center;
+    padding-top: 2vh;
+}
+
+/*--------------------------------------------------------
+home-page links div
+--------------------------------------------------------*/
+
+#portfolioImage {
+    padding-left: 0;
+}
+
+#portfolioText {
+    padding-top: 15vh;
+}
+
+#contactLinkDiv {
+    margin-bottom: 7vh;
+}
+
+#contactLinkImage {
+    padding-right: 0;
+}
+
+#contactLinkText {
+    padding-top: 15vh;
+    text-align: center;
+}
+
+/*--------------------------------------------------------
+about-content
+--------------------------------------------------------*/
+#aboutContent{
+    margin-top: 13vh;
+    padding-bottom: 7vh;
+    text-align: center;
+}
+
+/*--------------------------------------------------------
+contact-content
+--------------------------------------------------------*/
+#contactContent{
+    margin-top: 13vh;
+    padding-bottom: 7vh;
+    text-align: center;
+    margin-left: 3vw;
+    padding-top: 5vh;
+}
+#contactLinks{
+    margin-top: 3vh;
+}
+#contactLinkSection{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5vh;
+}
+#paper{
+    height: 3vh;
+}
+hr{
+    width: 25vw;
+    border-color: gray;
+}
+#contactMe{
+    display: flex;
+    flex-direction: column;
+}
+#contactImage{
+    height:35vh;
+    border-radius: 50%;
+    margin-left: 4vw
+}
+#contactText{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    padding-top: 5vh;
+    width: 25vw;
+}
+
+/*--------------------------------------------------------
+portfolio-text
+--------------------------------------------------------*/
+#portfolioText{
+    margin-top: 5vh;
+    text-align: center;
+}
+
+/*--------------------------------------------------------
+portfolio-card
+--------------------------------------------------------*/
+.card {
+    padding: 5px;
+    text-align: center;
+    font-size: 90%;
+    color: black;
+    background-color: white;
+    height: 31vh;
+    width: 15vw;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px grey;
+    margin-right: 3vw;
+}
+  #applicationCardText{
+      padding-top: .5vh;
+  }
+
+/*--------------------------------------------------------
+portfolio-applications
+--------------------------------------------------------*/
+#applicationsDiv{
+    text-align: center;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+#applicationCards{
+    display: flex;
+    flex-direction: row;
+}
+/*--------------------------------------------------------
+portfolio-design
+--------------------------------------------------------*/
+#designDiv{
+    text-align: center;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 5vh;
+    padding-bottom: 7vh;
+}
+
+/*--------------------------------------------------------
+logos-content
+--------------------------------------------------------*/
+#logosContent{
+    margin-top: 13vh;
+    padding-bottom: 7vh;
+    text-align: center;
+}
+#logosTitle{
+    text-align: left;
+    padding-top: 5vh;
+}
+.logosImage{
+height: 20vh;
+padding-top: 3vh;
+}
+#logosBack{
+   float: right;
+}
+
+/*--------------------------------------------------------
+backgrounds-content
+--------------------------------------------------------*/
+#backgroundsContent{
+    margin-top: 13vh;
+    padding-bottom: 7vh;
+    text-align: center;
+    width: 50%;
+}
+.backgroundsImage{
+    height: 40vh; 
+    box-shadow: 3px 3px 5px grey;
+    margin-top: 3vh;
+}
+#backgroundsBack{
+    float: right;
+ }
+
+
