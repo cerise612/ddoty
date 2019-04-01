@@ -24,6 +24,19 @@ a:visited {
 }
 
 /*--------------------------------------------------------
+text
+--------------------------------------------------------*/
+h1{
+    font-weight: bold;
+}
+h3{
+    font-weight: bold;
+}
+h5{
+    font-weight: bold;
+}
+
+/*--------------------------------------------------------
 navigation
 --------------------------------------------------------*/
 
@@ -45,6 +58,10 @@ navigation
     align-items: flex-end;
 }
 
+.nav-link{
+    font-size: large;
+}
+
 /*--------------------------------------------------------
 footer
 --------------------------------------------------------*/
@@ -61,7 +78,7 @@ home-banner
 --------------------------------------------------------*/
 
 #banner {
-    background-image: url("../images/main/banner2.jpg");
+    background-image: url("../images/main/banner.jpg");
     background-repeat: no-repeat;
     margin-top: 13vh;
 }
@@ -135,51 +152,67 @@ home-page links div
     padding-top: 15vh;
     text-align: center;
 }
+#mainButton{
+    margin-top: 2vh;
+}
 
 /*--------------------------------------------------------
 about-content
 --------------------------------------------------------*/
-#aboutContent{
+
+#aboutContent {
     margin-top: 13vh;
     padding-bottom: 7vh;
     text-align: center;
 }
 
+#aboutPhoto {
+    margin-bottom: 3vh;
+}
+
 /*--------------------------------------------------------
 contact-content
 --------------------------------------------------------*/
-#contactContent{
+
+#contactContent {
     margin-top: 13vh;
     padding-bottom: 7vh;
     text-align: center;
     margin-left: 3vw;
     padding-top: 5vh;
 }
-#contactLinks{
+
+#contactLinks {
     margin-top: 3vh;
 }
-#contactLinkSection{
+
+#contactLinkSection {
     display: flex;
     flex-direction: column;
     margin-top: 1.5vh;
 }
-#paper{
+
+#paper {
     height: 3vh;
 }
-hr{
+
+hr {
     width: 25vw;
     border-color: gray;
 }
-#contactMe{
+
+#contactMe {
     display: flex;
     flex-direction: column;
 }
-#contactImage{
-    height:35vh;
+
+#contactImage {
+    height: 35vh;
     border-radius: 50%;
     margin-left: 4vw
 }
-#contactText{
+
+#contactText {
     display: flex;
     flex-direction: column;
     padding-left: 0;
@@ -190,7 +223,8 @@ hr{
 /*--------------------------------------------------------
 portfolio-text
 --------------------------------------------------------*/
-#portfolioText{
+
+#portfolioText {
     margin-top: 5vh;
     text-align: center;
 }
@@ -198,6 +232,7 @@ portfolio-text
 /*--------------------------------------------------------
 portfolio-card
 --------------------------------------------------------*/
+
 .card {
     padding: 5px;
     text-align: center;
@@ -210,26 +245,31 @@ portfolio-card
     box-shadow: 3px 3px 5px grey;
     margin-right: 3vw;
 }
-  #applicationCardText{
-      padding-top: .5vh;
-  }
+
+#applicationCardText {
+    padding-top: .5vh;
+}
 
 /*--------------------------------------------------------
 portfolio-applications
 --------------------------------------------------------*/
-#applicationsDiv{
+
+#applicationsDiv {
     text-align: center;
     padding-left: 2vw;
     padding-right: 2vw;
 }
-#applicationCards{
+
+#applicationCards {
     display: flex;
     flex-direction: row;
 }
+
 /*--------------------------------------------------------
 portfolio-design
 --------------------------------------------------------*/
-#designDiv{
+
+#designDiv {
     text-align: center;
     padding-left: 2vw;
     padding-right: 2vw;
@@ -240,39 +280,122 @@ portfolio-design
 /*--------------------------------------------------------
 logos-content
 --------------------------------------------------------*/
-#logosContent{
+
+#logosContent {
     margin-top: 13vh;
     padding-bottom: 7vh;
     text-align: center;
 }
-#logosTitle{
+
+#logosTitle {
     text-align: left;
     padding-top: 5vh;
 }
-.logosImage{
-height: 20vh;
-padding-top: 3vh;
+
+.logosImage {
+    height: 20vh;
+    padding-top: 3vh;
 }
-#logosBack{
-   float: right;
+
+#logosBack {
+    float: right;
 }
 
 /*--------------------------------------------------------
 backgrounds-content
 --------------------------------------------------------*/
-#backgroundsContent{
-    margin-top: 13vh;
-    padding-bottom: 7vh;
+
+#backgroundsContent {
+    margin-top: 13vh; 
     text-align: center;
     width: 50%;
 }
-.backgroundsImage{
-    height: 40vh; 
+
+.backgroundsImage {
+    height: 40vh;
     box-shadow: 3px 3px 5px grey;
     margin-top: 3vh;
 }
-#backgroundsBack{
+
+#backgroundsBack {
     float: right;
- }
+    padding-bottom: 7vh;
+    margin-top: 2vh; 
+}
 
+/*--------------------------------------------------------
+fetchapi-content
+--------------------------------------------------------*/
 
+#apiContent {
+    margin-top: 13vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.apiImage {
+    width: 50vw;
+    height: 50vh;
+    margin-bottom: 3vh;
+    display: flex;
+    justify-content: center;
+}
+
+#apiBackButton {
+    float: right;
+    padding-bottom: 7vh;
+    margin-right: 10vw;
+}
+
+/*--------------------------------------------------------
+fetch-content
+--------------------------------------------------------*/
+
+#fetchContent {
+    margin-top: 13vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fetchImage {
+    width: 50vw;
+    height: 65vh;
+    margin-bottom: 3vh;
+    display: flex;
+    justify-content: center;
+}
+
+#fetchBackButton {
+    float: right;
+    padding-bottom: 7vh;
+    margin-right: 10vw;
+}
+
+/*--------------------------------------------------------
+jtb-content
+--------------------------------------------------------*/
+
+#jtbContent {
+    margin-top: 13vh;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.jtbImage {
+    width: 50vw;
+    height: 65vh;
+    margin-bottom: 3vh;
+    display: flex;
+    justify-content: center;
+}
+
+#jtbBackButton {
+    float: right;
+    padding-bottom: 7vh;
+    margin-right: 10vw;
+}
