@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>DDoty | Portfolio</title>
   <meta name="description" content="The design portfolio of Danielle Doty">
-  <meta name="keywords" content="danielle doty, danielle, doty, web, website, websites, web design, design, ui, ux, freelance, responsive, mobile, mobile design, development, responsive development, web development, unique, fun, developer, affordable, small business, personal, blog, portfolio">
-  
+  <meta name="keywords"
+    content="danielle doty, danielle, doty, web, website, websites, web design, design, ui, ux, freelance, responsive, mobile, mobile design, development, responsive development, web development, unique, fun, developer, affordable, small business, personal, blog, portfolio">
+
   <!-- reset CSS -->
   <link href="../assets/css/reset.css" type="text/css" rel="stylesheet">
 
@@ -22,94 +23,112 @@
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans+Condensed:300|Poppins|Quicksand"
     rel="stylesheet">
- 
-    <!-- icon -->
+
+  <!-- icon -->
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/ddfavicon copy.ico">
 </head>
 
 <body>
-  <!-- header -->
-  <nav class="navbar fixed-top navbar-light bg-light" id="navBar">
-      <ul class="nav">
-          <li class="nav-item">
-          <a class="nav-link active" href="#"> <img src="../assets/images/navBar/logo.jpg" alt="ddoty logo"></a>
-        </li>
-          <li class="nav-item pageLinks">
-          <a class="nav-link" href="../pages/about.html">About</a>
-        </li>
-        <li class="nav-item pageLinks">
-          <a class="nav-link" href="../pages/portfolio.html">Projects</a>
-        </li>
-        <li class="nav-item pageLinks">
-          <a class="nav-link" href="../pages/contact.html">Connect</a>
-        </li>
-      </ul>
-      <ul class="nav justify-content-end" id="socialLinks">
-          <li class="nav-item">
-              <a class="nav-link" href="https://github.com/cerise612" target="_blank">
-                <img src="../assets/images/navBar/iconmonstr-github-5-240.png" style="height: 40px" alt="Github Link"
-                  id="githubLink">
-              </a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="https://www.linkedin.com/in/danielle-doty/" target="_blank">
-                <img src="../assets/images/navBar/iconmonstr-linkedin-5-240.png" style="height: 40px" alt="LinkedIn Link"
-                  id="linkedInLink">
-              </a>
-          </li>
-        </ul>
-    </nav>
-
-  <!-- banner -->
-  <div class="container-fluid" id="banner">
-    <div class="row">
-      <div class="col">
-        <div class="row" id="bannerName">
-          <h1>I'm Danielle Doty, a Full Stack Developer.</h1>
+  <!-- navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navBar">
+    <div class="row justify-content-between">
+        <div class="col-4">
+      <a class="navbar-brand" href="../pages/main.html"><img src="../assets/images/navBar/logo.jpg" class="img-fluid"
+          alt="ddoty logo" id="ddotyLogo"></a>
         </div>
-        <div class="row" id="bannerSummary">
-          <h4>I've always been drawn to the overlap between design and development. My skills are broad: from ui/ux to
-            design,front end to back end development. I enjoy each aspect, and love building sites & mobile apps from
-            start to finish, for clients all over the world.</h4>
+      <div class="col-3" id="navDropDown">
+        <div class="row">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
-      </div>
-      <div class="col-4" id="skillsSection">
-        <div class="row" id="skillsTitle">
-          <h3>What I Do</h3>
-        </div>
-        <div class="row" id="skills">
-          <div class="col" id="frontEnd">
-            <h5>Front End</h5>
-            <ul>
-              <li>React</li>
-              <li>HTMLS5</li>
-              <li>CSS3</li>
-              <li>Javascript</li>
-              <li>JQuery</li>
-              <li>bootstrap</li>
-              <li>Handlebars</li>
-              <li>Java</li>
+        <div class="row">
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item pageLinks">
+                <a class="nav-link" href="../pages/about.html">About</a>
+              </li>
+              <li class="nav-item pageLinks">
+                <a class="nav-link" href="../pages/portfolio.html">Projects</a>
+              </li>
+              <li class="nav-item pageLinks">
+                <a class="nav-link" href="../pages/contact.html">Connect</a>
+              </li>
             </ul>
-          </div>
-          <div class="col" id="backEnd">
-              <h5>Back End</h5>
-            <ul>
-              <li>MySql</li>
-              <li>MongoDB</li>
-              <li>Firebase</li>
-              <li>Express.JS</li>
-              <li>Node</li>
+            <ul class="nav justify-content-end" id="socialLinks">
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/cerise612" target="_blank">
+                  <img src="../assets/images/navBar/iconmonstr-github-5-240.png" class="img-fluid"
+                    alt="Github Link" id="githubLink">
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/in/danielle-doty/" target="_blank">
+                  <img src="../assets/images/navBar/iconmonstr-linkedin-5-240.png" class="img-fluid"
+                    alt="LinkedIn Link" id="linkedInLink">
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </nav>
+
+  <!-- banner -->
+  <div class="content">
+      <div class="content-inside">
+  <div class="container-fluid" id="banner">
+      <div class="row" >
+        <div class="col" id="bannerTitle">
+          <h1>I'm Danielle Doty, a Full Stack Developer.</h1>
+        </div>
+        <div class="col">
+            <h3 id="bannerSkillTitle">What I Do</h3>
+        </div>
+        <div class="w-100"></div>
+        <div class="col" id="bannerText">
+            <h4>I've always been drawn to the overlap between design and development. My skills are broad: from ui/ux to
+                design,front end to back end development. I enjoy each aspect, and love building sites & mobile apps from
+                start to finish, for clients all over the world.</h4>
+        </div>
+        <div class="row" id="bannerSkills">
+        <!-- <div class="col" id="skillsRow">
+            <div class="col" id="frontEnd"> -->
+                <!-- <h5>Front End</h5> -->
+                <ul id="frontEnd">
+                  <li><b>Front End</b></li>
+                  <li>React</li>
+                  <li>HTMLS5</li>
+                  <li>CSS3</li>
+                  <li>Javascript</li>
+                  <li>JQuery</li>
+                  <li>bootstrap</li>
+                  <li>Handlebars</li>
+                  <li>Java</li>
+                </ul>
+              <!-- </div>
+              <div class="col" id="backEnd"> -->
+                <!-- <h5>Back End</h5> -->
+                <ul id="backEnd">
+                  <li><b>Back End</b></li>
+                  <li>MySql</li>
+                  <li>MongoDB</li>
+                  <li>Firebase</li>
+                  <li>Express.JS</li>
+                  <li>Node</li>
+              <!-- </div>
+        </div> -->
+      </div>
+      </div>
+    </div>
 
   <!-- center section -->
-  <div class="container-fluid">
-    <div class="row" id="centerSection">
+  <div class="container-fluid" id="centerSection">
+    <div class="row" id="centerRow">
       <div class="col-4" id="starSection">
-        <img src="../assets/images/main/star.jpg" alt="star" id="starImage">
+        <img src="../assets/images/main/star.jpg" class="img-fluid" alt="star" id="starImage">
         <h3 id="starTitle">Discover</h3>
         <div id="starList">
           <ul>
@@ -126,7 +145,7 @@
         </div>
       </div>
       <div class="col-4" id="heartSection">
-        <img src="../assets/images/main/heart.jpg" alt="heart" id="heartImage">
+        <img src="../assets/images/main/heart.jpg" class="img-fluid" alt="heart" id="heartImage">
         <h3 id="heartTitle">Design</h3>
         <div id="heartList">
           <ul>
@@ -148,60 +167,57 @@
           </ul>
         </div>
       </div>
-    <div class="col-4" id="eyeSection">
-      <img src="../assets/images/main/eye.jpg" alt="eye" id="eyeImage">
-      <h3 id="eyeTitle">Deploy</h3>
-      <div id="eyeList">
-        <ul>
-          <li>
-            Prototyping
-          </li>
-          <li>
-            Development
-          </li>
-        </ul>
+      <div class="col-4" id="eyeSection">
+        <img src="../assets/images/main/eye.jpg" class="img-fluid" alt="eye" id="eyeImage">
+        <h3 id="eyeTitle">Deploy</h3>
+        <div id="eyeList">
+          <ul>
+            <li>
+              Prototyping
+            </li>
+            <li>
+              Development
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
-  </div>
-
-  <!-- portfolio link -->
-  <div class="container-fluid" id="">
-    <div class="row">
-      <div class="col" id="portfolioImage">
-       <img src="../assets/images/main/portfolio.jpg" alt="lighthouse">
+  <div class="container-fluid" id="portfolioLinkDiv">
+    <div class="row" id="portfolioLinkRow">
+      <div class="col" id="portfolioLinkImage">
+         <img src="../assets/images/main/portfolio.jpg" class="img-fluid" alt="lighthouse" id="image1"> 
       </div>
-      <div class="col" id="portfolioText">
-          <h1>Portfolio</h1>
-          <h4>Click below to see some projects I've been working on lately. </h4>
-          <a href="../pages/portfolio.html"><button type="button" class="btn btn-outline-dark" id="mainButton">Check out my latest projects
+      <div class="col" id="portfolioLinkTextDiv">
+        <h1 id="portfolioLinkTitle">Portfolio</h1>
+        <h4 id="portfolioLinkText">Click below to see some projects I've been working on lately. </h4>
+        <a href="../pages/portfolio.html"><button type="button" class="btn btn-outline-dark" id="mainButton">Check out
+            my latest projects
           </button></a>
       </div>
-    </div>
-  </div>
-
-  <!-- contact link -->
-  <div class="container-fluid" id="contactLinkDiv">
-    <div class="row">
-      <div class="col" id="contactLinkText">
-          <h1>Get in touch</h1>
-          <h4>I'm available for remote work - if you would like to build something together.</h4>
-          <a href="../pages/contact.html"><button type="button" class="btn btn-outline-dark" id="mainButton">Get in touch
+      <div class="w-100"></div>
+      <div class="col" id="contactLinkTextDiv">
+        <h1 id="contactLinkTitle">Get in touch</h1>
+        <h4 id="contactLinkTextMain">I'm available for remote work - if you would like to build something together.</h4>
+        <a href="../pages/contact.html"><button type="button" class="btn btn-outline-dark" id="mainButton">Get in touch
           </button> </a>
-        </div>
-      <div class="col" id="contactLinkImage">
-          <img src="../assets/images/main/contact.jpg" alt="lighthouse">
+
+      </div>
+      <div class="col" id="contactLinkImage"> 
+        <img src="../assets/images/main/contact.jpg" class="img-fluid" alt="lighthouse" id="image2"> 
       </div>
     </div>
   </div>
-
+</div>
+</div>
+<!-- <div class="push"></div> -->
   <!-- footer -->
   <nav class="navbar fixed-bottom navbar-light bg-light" id="footer">
-      <p>ddoty &copy; 2018 -<span id="copyright">
-          <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+    <p>ddoty &copy; 2018 -<span id="copyright">
+        <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
       </span>
     </p>
-    </nav>
+  </nav>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

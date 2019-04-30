@@ -1,10 +1,27 @@
+html,
 body {
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
     font-family: 'Open Sans Condensed', sans-serif;
     /* font-family: 'Quicksand', sans-serif; */
     /* font-family: 'Poppins', sans-serif; */
     /* font-family: 'Montserrat', sans-serif; */
+}
+
+.content {
+    min-height: 100%;
+}
+
+.content-inside {
+    padding-bottom: 50px;
+}
+
+.container {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 /*--------------------------------------------------------
@@ -26,14 +43,43 @@ a:visited {
 /*--------------------------------------------------------
 text
 --------------------------------------------------------*/
-h1{
+h1 {
     font-weight: bold;
+    font-size: 3.074em;
 }
-h3{
-    font-weight: bold;
+
+h2 {
+    font-size: 2.728em;
 }
-h5{
+
+h3 {
     font-weight: bold;
+    font-size: 2.44em;
+}
+
+h4 {
+    font-size: 2.2em;
+}
+
+h5 {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+h6 {
+    font-size: 1.5em;
+}
+
+
+li {
+    font-size: 1.77em;
+    ;
+}
+p{
+    font-size: 2em;
+}
+a{
+    font-size: 2em;
 }
 
 /*--------------------------------------------------------
@@ -42,24 +88,38 @@ navigation
 
 #navBar {
     width: 100%;
+    height: 13vh;
     opacity: .75;
     display: flex;
     flex-direction: row;
+    display: inline-block;
 }
 
 .pageLinks {
     display: flex;
     align-items: flex-end;
-    padding-left: 0px;
+    padding-top: 7vh;
+    
 }
 
 #socialLinks {
     display: flex;
     align-items: flex-end;
+    padding-top: 5vh;
+    padding-left: 5vw;
+}
+#githubLink{
+    height: 40px;
+    }
+    #linkedInLink{
+        height: 40px;
+    }
+.nav-link {
+    font-size: large;
 }
 
-.nav-link{
-    font-size: large;
+button:focus {
+    outline-color: blueviolet;
 }
 
 /*--------------------------------------------------------
@@ -71,6 +131,8 @@ footer
     display: flex;
     justify-content: center;
     opacity: .5;
+    height: 50px;
+    margin-top: -50px;
 }
 
 /*--------------------------------------------------------
@@ -80,34 +142,40 @@ home-banner
 #banner {
     background-image: url("../images/main/banner.jpg");
     background-repeat: no-repeat;
-    margin-top: 13vh;
+    background-size: cover;
+    padding-right: 0vw;
+    padding-left: 0vw;
 }
-
 #bannerName {
     padding-left: 2vw;
     padding-top: 3vh;
 }
 
-#bannerSummary {
+#bannerText {
     padding-right: 5vw;
     padding-left: 2vw;
     padding-top: 3vh;
+    max-width: 60%;
 }
 
-#skillsSection {
-    padding-right: 2vw;
-}
-
-#skillsTitle {
-    text-align: center;
+#bannerSkills {
     padding-left: 10vw;
+}
+
+#bannerSkillTitle {
+    text-align: center;
+    padding-left: 3vw;
     padding-top: 3vh;
 }
-
+#backEnd{
+    padding-left: 5vw;
+}
 /*--------------------------------------------------------
 home-center div
 --------------------------------------------------------*/
-
+#centerRow{
+    width: 100%
+}
 #centerSection {
     display: flex;
     flex-direction: row;
@@ -117,42 +185,52 @@ home-center div
 
 #starSection {
     text-align: center;
+    width: 33%;
 }
 
 #heartSection {
     text-align: center;
+    width: 33%;
 }
 
 #eyeSection {
     text-align: center;
     padding-top: 2vh;
+    width: 33%;
 }
 
 /*--------------------------------------------------------
 home-page links div
 --------------------------------------------------------*/
 
-#portfolioImage {
+#portfolioLinkImage {
     padding-left: 0;
+    padding-right: 0vw;
+    padding-left: 0vw;
 }
 
-#portfolioText {
+#portfolioLinkTextDiv {
     padding-top: 15vh;
+    padding-left: 0vw;
+    padding-right: 0vw;
+    text-align: center;
 }
 
-#contactLinkDiv {
-    margin-bottom: 7vh;
-}
 
 #contactLinkImage {
     padding-right: 0;
+    padding-left: 0vw;
+    padding-right: 0vw;
 }
 
-#contactLinkText {
+#contactLinkTextDiv{
     padding-top: 15vh;
     text-align: center;
+    padding-right: 0vw;
+    padding-left: 0vw;
 }
-#mainButton{
+
+#mainButton {
     margin-top: 2vh;
 }
 
@@ -162,12 +240,13 @@ about-content
 
 #aboutContent {
     margin-top: 13vh;
-    padding-bottom: 7vh;
+    /* padding-bottom: 7vh; */
     text-align: center;
 }
 
 #aboutPhoto {
     margin-bottom: 3vh;
+    height: 440px;
 }
 
 /*--------------------------------------------------------
@@ -178,7 +257,7 @@ contact-content
     margin-top: 13vh;
     padding-bottom: 7vh;
     text-align: center;
-    margin-left: 3vw;
+    /* margin-left: 3vw; */
     padding-top: 5vh;
 }
 
@@ -209,7 +288,7 @@ hr {
 #contactImage {
     height: 35vh;
     border-radius: 50%;
-    margin-left: 4vw
+    margin-left: 17vw
 }
 
 #contactText {
@@ -217,7 +296,7 @@ hr {
     flex-direction: column;
     padding-left: 0;
     padding-top: 5vh;
-    width: 25vw;
+    /* width: 25vw; */
 }
 
 /*--------------------------------------------------------
@@ -228,7 +307,12 @@ portfolio-text
     margin-top: 5vh;
     text-align: center;
 }
-
+a{
+font-size: 1em;
+}
+p{
+    font-size: 1em;
+}
 /*--------------------------------------------------------
 portfolio-card
 --------------------------------------------------------*/
@@ -236,7 +320,7 @@ portfolio-card
 .card {
     padding: 5px;
     text-align: center;
-    font-size: 90%;
+    /* font-size: 90%; */
     color: black;
     background-color: white;
     height: 31vh;
@@ -250,6 +334,9 @@ portfolio-card
     padding-top: .5vh;
 }
 
+.card-img-top{
+    height: 180px;
+}
 /*--------------------------------------------------------
 portfolio-applications
 --------------------------------------------------------*/
@@ -306,12 +393,22 @@ backgrounds-content
 --------------------------------------------------------*/
 
 #backgroundsContent {
-    margin-top: 13vh; 
+    margin-top: 13vh;
     text-align: center;
     width: 50%;
 }
 
-.backgroundsImage {
+#whiteBackground  {
+    height: 40vh;
+    box-shadow: 3px 3px 5px grey;
+    margin-top: 3vh;
+}
+#blackBackground  {
+    height: 40vh;
+    box-shadow: 3px 3px 5px grey;
+    margin-top: 3vh;
+}
+#catBackground  {
     height: 40vh;
     box-shadow: 3px 3px 5px grey;
     margin-top: 3vh;
@@ -320,7 +417,7 @@ backgrounds-content
 #backgroundsBack {
     float: right;
     padding-bottom: 7vh;
-    margin-top: 2vh; 
+    margin-top: 2vh;
 }
 
 /*--------------------------------------------------------
@@ -380,12 +477,11 @@ jtb-content
 
 #jtbContent {
     margin-top: 13vh;
-    /* text-align: center; */
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 25vw;
 }
-
 .jtbImage {
     width: 50vw;
     height: 65vh;

@@ -2,26 +2,951 @@
 Responsive elements
 --------------------------------------------------------*/
 
-@media only screen and (min-width: 768px) and (max-width: 959px) {
+/* Extra small devices (portrait phones, less than 812px) */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+    body {
+        overflow: hidden;
+        font-size: .50em;
+    }
 
-} 
+    /*--------------------------------------------------------
+navigation
+--------------------------------------------------------*/
+    #navBar {
+        height: auto;
+        width: 104%;
+    }
 
-@media only screen and (width: 1024px) {
-    /* #contact { background-size: 1210px; }
-    .card { margin: 60px 0 0 0; } */
-} 
+    #ddotyLogo {
+        width: 13vw;
+    }
 
-@media only screen and (max-width: 767px) { 
+    #navDropDown {
+        margin-top: .75vh;
 
+    }
+
+    #socialLinks {
+        display: none;
+    }
+
+    /*--------------------------------------------------------
+footer
+--------------------------------------------------------*/
+    #footer {
+        width: 96%
+    }
+
+    /*--------------------------------------------------------
+home-banner
+--------------------------------------------------------*/
+    #banner {
+        width: 104%;
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+        background-image: url("../images/main/bannerh1.jpg");
+        background-size: cover;
+    }
+
+    #bannerTitle {
+        padding-left: 8vw;
+    }
+
+    #bannerText {
+        max-width: 60%;
+        padding-left: 8vw;
+    }
+
+    #bannerSkills {
+        margin-left: 3vw;
+       padding-left: 6vw;
+    }
+    #backEnd{
+        padding-left: 0vw;
+    }
+    #bannerSkillTitle {
+        margin-left: 13vw;
+        margin-top: 4vh;
+    }
+
+    /*--------------------------------------------------------
+home-center div
+--------------------------------------------------------*/
+
+    #centerSection {
+        width: 104%;
+        padding: 0px;
+    }
+
+    #centerRow {
+        width: 100%;
+    }
+
+    #starImage {
+        width: 60%;
+    }
+
+    #heartImage {
+        width: 60%;
+    }
+
+    #eyeImage {
+        width: 60%;
+    }
+
+    /*--------------------------------------------------------
+home-page links div
+--------------------------------------------------------*/
+    #portfolioLinkDiv {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #portfolioLinkImage {
+        padding: 0px;
+        margin: 0px;
+        border: 0px;
+    }
+
+    #portfolioLinkRow {
+        margin-bottom: 5vh;
+    }
+
+    #portfolioLinkTextDiv {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    #portfolioLinkTitle {
+        margin-left: 7vw;
+    }
+
+    #portfolioLinkText {
+        width: 140px;
+        margin-left: 7vw;
+    }
+
+    #contactLinkImage {
+        padding: 0px;
+        margin: 0px;
+        border: 0px;
+
+    }
+
+    #contactLinkTextDiv {
+        padding: 0px;
+        margin: 0px;
+        border: 0px;
+
+    }
+
+    #contactLinkTextMain {
+        margin-left: 7vw;
+    }
+
+    #contactLinkTitle {
+        margin-left: 7vw;
+    }
+
+    #mainButton {
+        width: 38vw;
+        height: 3.25vh;
+        font-size: small;
+        text-align: center;
+        margin-top: 0;
+        margin-left: 7vw;
+    }
+    /*--------------------------------------------------------
+about-content
+--------------------------------------------------------*/
+
+#aboutContent {
+    margin-top: 0vh;
 }
 
-@media only screen and (max-width: 479px) {
+#aboutPhoto {
+    height: 200px;
+}
+/*--------------------------------------------------------
+contact-content
+--------------------------------------------------------*/
 
+#contactContent {
+    margin-top: 0vh;
+    padding-bottom: 0vh;
+    text-align: center;
+    margin-left: 0vw;
+    padding-top: 0vh;
 }
 
-@media only screen and (min-width: 1400px) {
+#contactLinks {
+    margin-top: 0vh;
+    width: 50%;
+}
+
+#contactLinkSection {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5vh;
+}
+
+#paper {
+    height: 3vh;
+}
+
+hr {
+    width: 25vw;
+    border-color: gray;
+}
+
+#contactMe {
+    display: flex;
+    flex-direction: column;
+}
+
+#contactImage {
+    height: 15vh;
+    border-radius: 50%;
+    margin-left: 4vw
+}
+
+#contactText {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    padding-top: 2vh;
+    width: 45vw;
+}
+/*--------------------------------------------------------
+portfolio-card
+--------------------------------------------------------*/
+.card {
+    height: 18vh;
+    width: 45vw;
+    margin-right: 3vw;
+    margin-top: 3vw;
+}
+.card-img-top{
+    height: 87px;
+}
+#applicationsDiv {
+    padding-left: 8vw;
+}
+
+#designDiv {
+    padding-left: 8vw;
+}
+/*--------------------------------------------------------
+logos-content
+--------------------------------------------------------*/
+
+#logosContent {
+    margin-top: 0vh;
+    padding-bottom: 0vh;
+    text-align: center;
+}
+
+#logosTitle {
+    text-align: left;
+    padding-top: 2vh;
+    margin-left: 5vw;
+}
+/*--------------------------------------------------------
+backgrounds-content
+--------------------------------------------------------*/
+
+#backgroundsContent {
+    margin-top: 0vh;
+    text-align: center;
+    width: 100%;
+    margin-left: 5vw;
+}
+#backgroundText{
+    margin-top: 5vh;
+    /* max-width: 15vw; */
+}
+#whiteBackground  {
+    height: 25vh;
+    max-width: 55vw;
+    margin-right: 15vw;
+}
+#blackBackground  {
+    height: 25vh;
+    max-width: 55vw;
+    margin-right: 15vw;
+}
+#catBackground  {
+    height: 25vh;
+    max-width: 55vw;
+    margin-right: 15vw;
+}
+#backgroundsBack{
+    margin-right: 5vw;
+}
+/*--------------------------------------------------------
+fetch-content
+--------------------------------------------------------*/
+
+#fetchContent {
+    margin-top: 0vh;
+    margin-left: 2vw;
+}
+
+.fetchImage {
+    width: 75vw;
+    height: 35vh;
+    margin-bottom: 3vh;
+    margin-left: 12vw;
+}
+/*--------------------------------------------------------
+fetch api-content
+--------------------------------------------------------*/
+#apiContent {
+    margin-top: 0vh;
+    margin-left: 2vw;
     
-} 
+}
+#introText{
+    margin-right: 2vw;
+}
+.apiImage {
+    width: 75vw;
+    height: 35vh;
+    margin-bottom: 3vh;
+    margin-left: 12vw;
+}
+/*--------------------------------------------------------
+jtb-content
+--------------------------------------------------------*/
+
+#jtbContent {
+    margin-top: 0vh;
+    margin-left: 15vw;
+}
+.jtbImage {
+    width: 70vw;
+    height: 35vh;
+}
+
+#jtbBackButton {
+    float: right;
+    padding-bottom: 7vh;
+    margin-right: 10vw;
+}
+}
+
+/* Small devices (landscape phones, less than 812px) */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    body {
+        overflow: hidden;
+        font-size: .50em;
+    }
+        /*--------------------------------------------------------
+navigation
+--------------------------------------------------------*/
+
+#ddotyLogo {
+    width: 5vw;
+}
+
+#navDropDown {
+    margin-top: .75vh;
+    padding-left: 19vw;
+
+}
+
+#socialLinks {
+    display: none;
+}
+
+
+    /*--------------------------------------------------------
+home-banner
+--------------------------------------------------------*/
+
+    #banner {
+        background-image: url("../images/main/bannerh1.jpg");
+        background-size: cover;
+    }
+    #bannerTitle{
+        padding-left: 4vw;
+    }
+    #bannerText {
+        max-width: 50%;
+        padding-left: 4vw;
+    }
+    #bannerSkills {
+        margin-left: 13vw;
+        padding-left: 0vw;
+    }
+    #backEnd{
+        padding-left: 0vw;
+    }
+
+    #bannerSkillTitle {
+        margin-left: 13vw;
+        margin-top: 4vh;
+    }
+
+        /*--------------------------------------------------------
+home-center div
+--------------------------------------------------------*/
+
+#centerSection {
+    width: 104%;
+    padding: 0px;
+}
+
+#centerRow {
+    width: 100%;
+}
+
+#starImage {
+    width: 20%;
+}
+
+#heartImage {
+    width: 20%;
+}
+
+#eyeImage {
+    width: 20%;
+}
+ /*--------------------------------------------------------
+home-page links div
+--------------------------------------------------------*/
+#portfolioLinkDiv {
+    margin: 0px;
+    padding: 0px;
+}
+
+#portfolioLinkImage {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+#portfolioLinkRow {
+    margin-bottom: 5vh;
+}
+
+#portfolioLinkTextDiv {
+    padding: 0px;
+    margin: 0px;
+}
+
+#portfolioLinkTitle {
+    margin-left: 7vw;
+}
+
+#portfolioLinkText {
+    width: 140px;
+    margin-left: 7vw;
+}
+
+#contactLinkImage {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+
+}
+
+#contactLinkTextDiv {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+
+}
+
+#contactLinkTextMain {
+    margin-left: 7vw;
+}
+
+#contactLinkTitle {
+    margin-left: 7vw;
+}
+
+#mainButton {
+    width: 38vw;
+    height: 3.25vh;
+    font-size: small;
+    text-align: center;
+    margin-top: 0;
+    margin-left: 7vw;
+}
+/*--------------------------------------------------------
+contact-content
+--------------------------------------------------------*/
+
+#contactContent {
+    margin-top: 0vh;
+    padding-bottom: 0vh;
+    text-align: center;
+    margin-left: 0vw;
+    padding-top: 0vh;
+}
+
+#contactLinks {
+    margin-top: 0vh;
+    width: 50%;
+}
+
+#contactLinkSection {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0vh;
+}
+
+#paper {
+    height: 3vh;
+}
+
+hr {
+    width: 25vw;
+    border-color: gray;
+}
+
+#contactMe {
+    display: flex;
+    flex-direction: column;
+}
+
+#coffee{
+    margin-left: 7vw;
+}
+
+#contactText {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    padding-top: 2vh;
+    width: 45vw;
+}
+h2{
+    font-size: 2em;
+}
+h5{
+    font-size: 1em;
+}
+p{
+    font-size: 1em;
+}
+a{
+    font-size: 1em;
+}
+
+/*--------------------------------------------------------
+portfolio-content
+--------------------------------------------------------*/
+h6{
+    font-size: 1em;
+}
+/*--------------------------------------------------------
+portfolio-card
+--------------------------------------------------------*/
+.card {
+    height: 35vh;
+    width: 22vw;
+    margin-right: 2vw;
+    margin-top: 3vw;
+}
+.card-img-top{
+    height: 60px;
+}
+#applicationsDiv {
+    padding-left: 4vw;
+}
+
+#designDiv {
+    padding-left: 4vw;
+}
+/*--------------------------------------------------------
+logos-content
+--------------------------------------------------------*/
+
+#logosContent {
+    margin-top: 0vh;
+    padding-bottom: 0vh;
+}
+
+#logosTitle {
+    text-align: left;
+    padding-top: 5vh;
+    margin-left: 5vw;
+}
+/*--------------------------------------------------------
+backgrounds-content
+--------------------------------------------------------*/
+
+#backgroundsContent {
+    margin-top: 2vh;
+    text-align: center;
+    width: 100%;
+    margin-left: 2vw;
+}
+#backgroundText{
+    margin-top: 5vh;
+}
+#whiteBackground  {
+    height: 35vh;
+    max-width: 45vw;
+    margin-right: 15vw;
+}
+#blackBackground  {
+    height: 35vh;
+    max-width: 45vw;
+    margin-right: 15vw;
+}
+#catBackground  {
+    height: 35vh;
+    max-width: 45vw;
+    margin-right: 15vw;
+}
+/*--------------------------------------------------------
+fetch-content
+--------------------------------------------------------*/
+
+#fetchContent {
+    margin-top: 2vh;
+    margin-left: 2vw;
+}
+
+.fetchImage {
+    width: 35vw;
+    height: 55vh;
+    margin-bottom: 3vh;
+    margin-left: 22vw;
+}
+/*--------------------------------------------------------
+fetchapi-content
+--------------------------------------------------------*/
+
+#apiContent {
+    margin-top: 2vh;
+    margin-left: 2vw;
+}
+
+.apiImage {
+    width: 35vw;
+    height: 55vh;
+    margin-bottom: 3vh;
+    margin-left: 22vw;
+}
+
+/* #apiBackButton {
+    float: right;
+    padding-bottom: 7vh;
+    margin-right: 10vw;
+} */
+}
+
+/* Medium devices (tablets, less than 1366px) */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    body {
+        overflow: hidden;
+        font-size: .90em;
+    }
+        /*--------------------------------------------------------
+navigation
+--------------------------------------------------------*/
+#navBar {
+    height: auto;
+}
+
+
+#ddotyLogo {
+    width: 5vw;
+}
+
+.pageLinks {
+    padding-left: 0vw;
+    padding-top: 2vh; 
+}
+
+#socialLinks {
+   padding-left: 0vw;
+   padding-top: 2vh;
+  width:112px;
+}
+#githubLink{
+height: 20px;
+}
+#linkedInLink{
+    height: 20px;
+   position: relative;
+   right: 2vw;
+}
+
+    /*--------------------------------------------------------
+home-banner
+--------------------------------------------------------*/
+
+    #banner {
+        background-image: url("../images/main/bannerh1.jpg");
+        background-size: cover;
+        margin-top: 0vh;
+    }
+    #bannerText {
+        max-width: 50%
+    }
+    #bannerSkills {
+        margin-left: 13vw;
+        padding-left: 0vw;
+    }
+#backEnd{
+    padding-left: 0vw;
+}
+    #bannerSkillTitle {
+        margin-left: 13vw;
+        margin-top: 4vh;
+    }
+
+        /*--------------------------------------------------------
+home-center div
+--------------------------------------------------------*/
+
+#centerSection {
+    width: 104%;
+    padding: 0px;
+}
+
+#centerRow {
+    width: 100%;
+}
+
+#starImage {
+    width: 20%;
+}
+
+#heartImage {
+    width: 20%;
+}
+
+#eyeImage {
+    width: 20%;
+}
+ /*--------------------------------------------------------
+home-page links div
+--------------------------------------------------------*/
+#portfolioLinkDiv {
+    margin: 0px;
+    padding: 0px;
+}
+
+#portfolioLinkImage {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+#portfolioLinkRow {
+    margin-bottom: 5vh;
+}
+
+#portfolioLinkTextDiv {
+    padding: 0px;
+    margin: 0px;
+}
+
+#portfolioLinkTitle {
+    margin-left: 7vw;
+}
+
+#portfolioLinkText {
+    margin-left: 7vw;
+}
+
+#contactLinkImage {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+
+}
+
+#contactLinkTextDiv {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+
+}
+
+#contactLinkTextMain {
+    margin-left: 7vw;
+}
+
+#contactLinkTitle {
+    margin-left: 7vw;
+}
+
+#mainButton {
+    text-align: center;
+    margin-top: 0;
+    margin-left: 7vw;
+}
+/*--------------------------------------------------------
+contact-content
+--------------------------------------------------------*/
+
+#contactContent {
+    margin-top: 5vh;
+    padding-bottom: 0vh;
+    text-align: center;
+    margin-left: 0vw;
+    padding-top: 0vh;
+}
+
+#contactLinks {
+    margin-top: 0vh;
+    width: 50%;
+}
+
+#contactLinkSection {
+    margin-top: 3vh;
+}
+
+#contactImage {
+    margin-left: 8vw;
+    height: 25vh;
+}
+
+#contactText {
+    padding-left: 0;
+    padding-top: 2vh;
+    width: 45vw;
+}
+/*--------------------------------------------------------
+portfolio-card
+--------------------------------------------------------*/
+.card {
+    height: 20vh;
+    width: 18vw;
+    /* margin-right: 2vw; */
+    margin-top: 3vw;
+}
+#applicationsDiv{
+    padding-left: 5vw;
+    }
+#designDiv{
+padding-left: 5vw;
+}
+/*--------------------------------------------------------
+logos-content
+--------------------------------------------------------*/
+
+#logosContent {
+    margin-top: 0vh;
+    padding-bottom: 0vh;
+    margin-left: 5vw;
+}
+
+#logosTitle {
+    padding-top: 5vh;
+    margin-left: 5vw;
+}
+
+/*--------------------------------------------------------
+backgrounds-content
+--------------------------------------------------------*/
+
+#backgroundsContent {
+    margin-top: 0vh;
+    text-align: center;
+    width: 100%;
+    margin-left: 5vw;
+}
+#backgroundText{
+    margin-top: 5vh;
+    /* max-width: 15vw; */
+}
+#whiteBackground  {
+    height: 25vh;
+    max-width: 55vw;
+    margin-right: 15vw;
+}
+#blackBackground  {
+    height: 25vh;
+    max-width: 55vw;
+    margin-right: 15vw;
+}
+#catBackground  {
+    height: 25vh;
+    max-width: 55vw;
+    margin-right: 15vw;
+}
+/*--------------------------------------------------------
+fetch-content
+--------------------------------------------------------*/
+
+#fetchContent {
+    margin-top: 0vh;
+    margin-left: 2vw;
+}
+
+.fetchImage {
+    width: 65vw;
+    height: 35vh;
+    margin-bottom: 3vh;
+    margin-left: 12vw;
+}
+/*--------------------------------------------------------
+fetchapi-content
+--------------------------------------------------------*/
+
+#apiContent {
+    margin-top: 0vh;
+    margin-left: 2vw;
+}
+
+.apiImage {
+    width: 65vw;
+    height: 35vh;
+    margin-bottom: 3vh;
+    margin-left: 12vw;
+}
+
+/* #apiBackButton {
+    float: right;
+    padding-bottom: 7vh;
+    margin-right: 10vw;
+} */
+
+/*--------------------------------------------------------
+jtb-content
+--------------------------------------------------------*/
+
+#jtbContent {
+    margin-top: 0vh;
+    margin-left: 15vw;
+}
+.jtbImage {
+    width: 70vw;
+    height: 35vh;
+}
+
+/* #jtbBackButton {
+    float: right;
+    padding-bottom: 7vh;
+    margin-right: 10vw;
+} */
+}
 
 
 
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
+
+/* Extra large devices (large desktops) */
+/* No media query since the extra-large breakpoint has no upper bound on its width */
