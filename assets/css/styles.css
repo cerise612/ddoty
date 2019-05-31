@@ -343,8 +343,9 @@ portfolio-applications
 
 #applicationsDiv {
     text-align: center;
-    padding-left: 2vw;
+    padding-left: 7vw;
     padding-right: 2vw;
+    padding-top: 7vh;
 }
 
 #applicationCards {
@@ -358,9 +359,9 @@ portfolio-design
 
 #designDiv {
     text-align: center;
-    padding-left: 2vw;
+    padding-left: 7vw;
     padding-right: 2vw;
-    padding-top: 5vh;
+    padding-top: 7vh;
     padding-bottom: 7vh;
 }
 
